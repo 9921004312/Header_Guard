@@ -1,0 +1,15 @@
+Usage:
+1.Basic syntax
+    python HeaderGuard.py --input <input_file> --output <output_file>
+2.Scan a single URL
+    python HeaderGuard.py --url <url>
+3. Scan with specific path
+    python HeaderGuard.py --url <url> --path /<path_name>
+4. Login once and reuse session
+    python HeaderGuard.py --url <url> --path /<path_name> --headed --capture-storage-state state.json
+  Reuse saved session
+    python HeaderGuard.py --url <url> --path /<path_name> --storage-state state.json
+
+Output format:
+  python HeaderGuard.py --url <url> --format json
+  python HeaderGuard.py --url <url> --format table
